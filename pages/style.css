@@ -1,0 +1,204 @@
+.list {
+    list-style: none;
+    font-style: normal;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 320px;  
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+
+/* =======Normalaized ========== */
+body {
+  font-family: "Roboto", Tahoma, sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ========burger btn========== */
+
+.nav {
+    background-color: #181818;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn {
+    margin-left: 15px;
+}
+
+/* ========== Hero ============== */
+
+.hero {
+    height: 530px;
+    background-image: url(../img/images/rain_bk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div > h2 {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    padding-top: 27px;
+}
+
+.hero-title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFC700;
+    margin-top: 20px;
+}
+
+.hero-btn {
+    display: block;
+    margin: auto;
+    margin-top: 150px;
+    padding: 13px 17px 10px 17px;
+
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #0D0C11;
+
+    border: none;
+    background: radial-gradient(50% 50% at 50% 50%, #FFC700 0%, #FFC700 100%);
+    border-radius: 20px;
+}
+
+.recomendation {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.27;
+    /* or 127% */
+    margin-top: 22px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFC700;
+}
+
+.improvement {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.27;
+    /* or 127% */
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.more {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 11px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+/* ========= Recomend ========== */
+
+.recomend {
+    height: 340px;
+    background:linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../img/images/image.jpg), url(../img/images/Rectangle\ 2.6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 320px;
+}
+
+.recomend-title {
+    display: inline-block;
+    margin: 83px 36px 28px 36px;
+
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.28;
+    /* or 128% */
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
