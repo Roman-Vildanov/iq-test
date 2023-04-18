@@ -51,8 +51,6 @@ button {
 
 img {
   display: block;
-  width: 100%;
-  height: auto;
 }
 
 /* ========burger btn========== */
@@ -65,7 +63,7 @@ img {
     align-items: center;
 }
 
-.nav-btn {
+.menu-close-btn {
     margin-left: 15px;
 }
 
@@ -201,4 +199,202 @@ div > h2 {
     letter-spacing: 0.05em;
 
     color: #FFFFFF;
+}
+
+/* ============ advice =============== */
+
+.advice-title {
+    display: inline-block;
+    padding-top: 38px;
+    margin-left: 11px;
+    margin-right: 11px;
+
+    color: 272727;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    /* or 150% */
+
+    letter-spacing: 0.05em;
+}
+
+.advice-img {    
+    margin: auto;
+    margin-top: 38px;
+}
+
+.advice-btn {
+    display: block;
+    margin: auto;
+    padding: 13px 17px 10px 17px;
+
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #0D0C11;
+
+    border: none;
+    background: radial-gradient(50% 50% at 50% 50%, #FFC700 0%, #FFC700 100%);
+    border-radius: 20px;
+}
+
+/* ============ conclusion ============*/
+
+.conclusion {
+    background: url(../img/images/rain_bk2.jpg);
+    margin-top: 40px;
+}
+
+.conclusion-title-up {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.33;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+    display: inline-block;
+    padding-top: 56px;
+    margin-left: 14px;
+    margin-right: 51px;
+
+}
+
+.conclusion-title-up > span {
+    color: #FFC700;
+}
+
+.conclusion-bcg {
+    display: flex;
+    align-items: center;
+    background: rgba(243, 243, 242, 0.8);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 14px;
+    width: 303px;
+    height: 216px;
+}
+
+.conclusion-title-down {
+    padding-left: 14px;
+    padding-right: 15px;
+}
+
+.conclusion-dtn { 
+    margin: auto;   
+    margin-top: 33px;
+    margin-bottom: 52px;
+
+    display: block;
+    padding: 13px 17px 10px 17px;
+
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    border-radius: 20px;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 13px;
+}
+
+/* =========== Modal window ============ */
+
+.mobile-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    transition: opacity 250ms, visibility 250ms;
+    z-index: 1;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.mobile-modal {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 48px 83px 48px 40px;
+}
+
+.menu-close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.mobile-menu__list {
+    margin-bottom: 30px;
+}
+
+.mobile-menu__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.mobile-menu__link {
+    
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: tomato;
+    text-decoration: none;    
+}
+
+.mobile-menu__link--active {
+    color: yellow;
 }

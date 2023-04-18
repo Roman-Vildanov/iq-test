@@ -9,10 +9,35 @@
   </head>
   <body>
     <section class="container">
-        <header class="nav">
-            <button class="nav-btn">
-               Menu
-            </button>
+        <header class="nav">            
+            <div class="mobile-backdrop is-hidden">
+                <div class="mobile-modal">
+                    <button type="button" class="menu-close-btn">
+                        Menu
+                    </button>
+                    <div class="mobile-container">
+                        <div class="mobile-menu">
+                            <ul class="mobile-menu__list list">
+                                <li class="mobile-menu__item">
+                                <a
+                                    href="#"
+                                    class="mobile-menu__link mobile-menu__link--active"
+                                    >Главная</a
+                                >
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link"
+                                        >Информация о тесте
+                                    </a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                <a href="#" class="mobile-menu__link">Пройти тест</a>
+                                </li>
+                            </ul>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
         </header>
     </section>  
     <section class="container">  
@@ -37,24 +62,28 @@
         </div>
     </section>
     <section class="container">
-        <div>
-        <p>
-            Также по результатам теста <bolt>ВЫ ПОЛУЧИТЕ</bolt> подробные
-            <bolt>СОВЕТЫ</bolt> по определению наиболее перспективной
-            <bolt>ДЛЯ ВАШЕГО ТИПА интеллекта СФЕРЫ ДЕЯТЕЛЬНОСТИ</bolt>, которая
+        <div class="advice">
+        <p class="advice-title">
+            Также по результатам теста <b>ВЫ ПОЛУЧИТЕ</b> подробные
+            <b>СОВЕТЫ</b> по определению наиболее перспективной
+            <b>ДЛЯ ВАШЕГО ТИПА интеллекта СФЕРЫ ДЕЯТЕЛЬНОСТИ</b>, которая
             принесет вам скорейший финансовый результат.
         </p>
-        <iimg></iimg>
-        <button>ПРОЙТИ ТЕСТ</button>
+        <img src="../img/images/325-01.png" class="advice-img" width="232" height="180">
+        <button type="button" class="advice-btn">ПРОЙТИ ТЕСТ</button>
         </div>
     </section>
     <section class="container">
-        <div>
-            <p>Прохождение теста займет у вас не более <bold>12 минут</bold>, а его результаты вы сможете <bold>использовать всю жизнь</bold>. 
+        <div class="conclusion">
+            <p class="conclusion-title-up">Прохождение теста займет у вас не более <span>12 минут</span>, а его результаты вы сможете <span>использовать всю жизнь</span>. 
             </p>
-            <p>Профессиональная интерпретация и детально <bold>проработанные рекомендации</bold>проработанные рекомендации позволят вам качественно <bold>изменить все аспекты своей жизни:</bold> от финансового до любовного.</p>
-            <button>ПРОЙТИ ТЕСТ</button>
+            <div class="conclusion-bcg">
+                <p class="conclusion-title-down">Профессиональная интерпретация и детально <b>проработанные рекомендации</b>проработанные рекомендации позволят вам качественно <b>изменить все аспекты своей жизни:</b> от финансового до любовного.</p>
+            </div>
+            <button type="button" class="conclusion-dtn">ПРОЙТИ ТЕСТ</button>
+            <p class="copyright">&#169 2019</p>
         </div>
     </section>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
